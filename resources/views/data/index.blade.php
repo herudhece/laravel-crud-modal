@@ -39,11 +39,16 @@
           serverSide: true,
           ajax: "{{ route('data.index') }}",
           columns: [
-              {data: 'id', name: 'id'},
-              {data: 'name', name: 'name'},
-              {data: 'email', name: 'email'},
-              {data: 'phone', name: 'phone'},
-              {data: 'action', name: 'action', orderable: false, searchable: false},
+            {
+                data: 'DT_RowIndex',
+                name: 'DT_RowIndex',
+                orderable: false,
+                searchable: false
+            },
+            {data: 'name', name: 'name'},
+            {data: 'email', name: 'email'},
+            {data: 'phone', name: 'phone'},
+            {data: 'action', name: 'action', orderable: false, searchable: false},
           ]
       });
         
