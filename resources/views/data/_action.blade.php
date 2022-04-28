@@ -4,8 +4,7 @@
         <i class="fas fa-eye"></i>
     </a>
 
-    <a class="btn btn-primary btn-xs mb-1" title="Update" data-toggle='modal' data-target='#ajaxModel' id="update"  
-    data-attr="{{ route('data.edit', $model->id) }}" >
+    <a href="{{ route('data.edit', $model->id) }}" class="btn btn-primary btn-xs mb-1">
         <i class="fas fa-edit"></i>
     </a>
 
@@ -41,6 +40,26 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="ajaxModelEdit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog  modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myLargeModalLabel">Edit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="body">
+                       
+            </div>
+
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script>
