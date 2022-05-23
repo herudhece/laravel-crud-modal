@@ -7,7 +7,7 @@ ini adalah sebuah aplikasi CRUD simple dengan modal versi Laravel 9
 2. cd laravel-crud-modal/
 3. composer install
 4. cp .env.example .env
-5. tambahkan konfigurasi database pada file .env file (you can check my articles on how to achieve that)
+5. tambahkan konfigurasi database pada file .env file
 6. php artisan migrate --seed
 7. php artisan serve 
 
